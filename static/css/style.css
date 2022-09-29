@@ -1,0 +1,166 @@
+.container {
+    max-width: 1194px;
+    margin: auto;
+}
+
+header {
+    background-color: #314488;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-items {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.header-item {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 36px;
+    margin-left: 20px;
+}
+
+.header-item:first-child {
+    margin-left: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    width: 1631px;
+    height: 651px;
+    left: 192px;
+    top: 271px;
+
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 71px;
+}
+
+.model {
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+
+.title {
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 71px;
+    vertical-align: middle;
+    display: table-cell;
+    margin-top: 50px;
+}
+
+.buttons {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.choose {
+    width: 630px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 85px;
+    color: #fff;
+    background-color: #314488;
+    margin-top: 100px;
+
+}
+
+.submit {
+    width: 309px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    color: #fff;
+    background-color: #314488;
+    border-radius: 81px;
+    margin-top: 90px;
+}
+
+.main-text {
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.main {
+    display: table;
+    text-align: left;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.box {
+    margin-top: 144px;
+}
+
+.control {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.json {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.select {
+    position: fixed;
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    vertical-align: baseline;
+}
