@@ -51,3 +51,7 @@ Feel free to submit any issues.
 ### Contributions
 
 Currently open to only issues and bug fix related PRs. Feel free to solve an issue and submit a PR.
+
+### Bugs and reports.
+
+If you find an error, a flaw, a bug in the work of the site, please write either in [telegram](https://t.me/arszdarszd) or in [issue](https://github.com/vnj64/CatOrDog_OpenCV/issues/1).
