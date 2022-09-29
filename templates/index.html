@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if current_user.is_authenticated %}
+<div class="main">
+    <div class="main-text">
+        Я в своем познании настолько преисполнился, что я как будто бы уже<br>
+        сто триллионов миллиардов лет проживаю на триллионах и<br>
+        триллионах таких же планет, как эта Земля, мне этот мир абсолютно<br>
+        понятен, и я здесь ищу только одного - как отличить кота от собаки.<br>
+    </div>
+</div>
+{% else %}
+<div class="column is-4 is-offset-4">
+    <div class="box">
+        <style type="text/css">
+            .space {
+                padding: 20px;
+                background: #314488;
+                border-radius: 40px;
+            }
+        </style>
+        <div class="space">    
+            <h3 class="title"> <font color="#fff">Авторизация</font></h3>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="notification is-danger">
+                    {{ messages[0] }}
+                </div>
+            {% endif %}
+            {% endwith %}
+            <form method="POST" action="/login">
+                <div class="field">
+                    <div class="control">
+                        <input class="input is-large" type="email" name="email" placeholder="Email" autofocus="">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input class="input is-large" type="password" name="password" placeholder="Пароль">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Запомнить
+                    </label>
+                </div>
+                <button class="button is-block is-info is-large is-fullwidth">Войти</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}

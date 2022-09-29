@@ -1,0 +1,44 @@
+<!-- templates/profile.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="model">
+  <div class="buttons">
+    <div class="row">
+      <div class="title">
+        Выберите файл для разгузки. Только форматы: JPG, JPEG.
+      </div>
+      <p>
+          {% with messages = get_flashed_messages() %}
+            {% if messages %}
+              <ul>
+              {% for message in messages %}
+              <div class="json">
+                <li>{{ message }}</li>
+              </div>
+              {% endfor %}
+              </ul>
+            {% endif %}
+          {% endwith %}
+      </p>
+      {% if filename %}
+          <div>
+              <img src="{{ url_for('static', filename=filename) }}" width = "300" height = "300">
+          </div>
+      {% endif %}
+      <form method="post" enctype="multipart/form-data">
+          <dl>
+              <p>
+                  <input type="file" name="file" class="choose" autocomplete="off" required>
+                  
+              </p>
+          </dl>
+          <p>
+              <input type="submit" value="Анализ" class="submit">
+          </p>
+      </form>
+  </div>
+  </div>
+</div>
+{% endblock %}
