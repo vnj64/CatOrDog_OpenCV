@@ -41,8 +41,8 @@ To start you need to follow the path `OCRV_CatDog_FinalVersion/auth/` after ente
 
 ### Team
 
-- [Astan Pataraya](https://gitlab.com/pelmenin)
-- [Kamil Khabibullin](https://gitlab.com/vnj644)
+- [Astan Pataraya](https://github.com/iamkoldyn)
+- [Kamil Khabibullin](https://github.com/vnj64)
 
 ### Issues
 
