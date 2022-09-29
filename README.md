@@ -1,4 +1,4 @@
-# CatOrDOg_OpenCV
+# CatOrDog_OpenCV
 
 ![cat-dog](https://user-images.githubusercontent.com/91592995/175183458-93b43007-43cc-4c5c-9644-51d57938b31f.gif)
 
